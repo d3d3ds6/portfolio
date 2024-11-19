@@ -8,19 +8,38 @@ import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
 
 const styles = {
+  container: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    gap: '20px',
+    margin: '20px 10px',
+    padding: '20px',
+    borderRadius: '10px',
+    backgroundColor: '#f9f9f9',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+  },
   introTextContainer: {
-    margin: 10,
-    flexDirection: 'column',
+    flex: 1,
     whiteSpace: 'pre-wrap',
-    textAlign: 'left',
+    textAlign: 'justify',
     fontSize: '1.2em',
     fontWeight: 500,
+    lineHeight: '1.8em',
+    color: '#333333',
   },
   introImageContainer: {
-    margin: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
-    display: 'flex',
+    flexShrink: 0,
+    position: 'relative',
+  },
+  circularImage: {
+    width: '250px',
+    height: '250px',
+    borderRadius: '50%',
+    objectFit: 'cover',
+    border: '5px solid #0056b3', // Updated Border
+    boxShadow: '0 6px 12px rgba(0, 86, 179, 0.4)', // Soft Blue Shadow
+    transition: 'border-color 0.3s ease', // Smooth transition for hover effect
   },
 };
 
@@ -29,10 +48,16 @@ function About(props) {
   const [data, setData] = useState(null);
 
   const parseIntro = (text) => (
-    <ReactMarkdown
-      children={text}
-    />
+    <ReactMarkdown children={text} />
   );
+
+  const handleMouseEnter = (e) => {
+    e.target.style.borderColor = '#ff7043'; // Change to Warm Orange on hover
+  };
+
+  const handleMouseLeave = (e) => {
+    e.target.style.borderColor = '#0056b3'; // Reset to Deep Blue
+  };
 
   useEffect(() => {
     fetch(endpoints.about, {
@@ -46,22 +71,30 @@ function About(props) {
   return (
     <>
       <Header title={header} />
-      <div className="section-content-container">
-        <Container>
-          {data
-            ? (
-              <Fade>
-                <Row>
-                  <Col style={styles.introTextContainer}>
-                    {parseIntro(data.about)}
-                  </Col>
-                  <Col style={styles.introImageContainer}>
-                    <img src={data?.imageSource} alt="profile" />
-                  </Col>
-                </Row>
-              </Fade>
-            )
-            : <FallbackSpinner />}
+      <div className="section-content-container" style={{ position: 'relative' }}>
+        <Container style={styles.container}>
+          {data ? (
+            <Fade>
+              <Row>
+                <Col md={8} style={styles.introTextContainer}>
+                  {parseIntro(data.about)}
+                </Col>
+                <Col md={4}>
+                  <div style={styles.introImageContainer}>
+                    <img
+                      src={data?.imageSource}
+                      alt="profile"
+                      style={styles.circularImage}
+                      onMouseEnter={handleMouseEnter}
+                      onMouseLeave={handleMouseLeave}
+                    />
+                  </div>
+                </Col>
+              </Row>
+            </Fade>
+          ) : (
+            <FallbackSpinner />
+          )}
         </Container>
       </div>
     </>

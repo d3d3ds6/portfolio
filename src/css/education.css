@@ -1,19 +1,74 @@
-.vertical {
-    justify-content: center;
-}
-
-.vertical_alternating {
-    justify-content: center;
-}
-
-@media only screen and (max-width: 578px) {
+/* Correct CSS file without JS import */
+.section-content-container {
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    background-color: #f8f8f8; /* Light background */
+  }
+  
+  .section-content-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Customize the icons */
+  .chrono-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .chrono-icons img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+  }
+  
+  /* Media queries for responsiveness */
+  @media only screen and (max-width: 578px) {
     div.vertical-item-row > div:nth-child(1) {
-        width: 20% !important;
+      width: 20% !important;
     }
     div.vertical-item-row > div:nth-child(2) {
-        width: 65% !important;
+      width: 65% !important;
     }
     div.vertical-item-row > div:nth-child(3) {
-        width: 15% !important;
+      width: 15% !important;
     }
-}
+  }
+  
+  /* Animation effect for items */
+  .vertical-item-row div {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Timeline points style */
+  .chrono-point {
+    background-color: #003366; /* Navy blue background for points */
+    border: 2px solid #ffffff; /* White border for points */
+  }
+  
+  .chrono-point:hover {
+    background-color: #00509e; /* Lighter blue when hovered */
+    border: 2px solid #00509e; /* Adjust border color on hover */
+  }
+  
+  /* Adjust the text inside the timeline points */
+  .chrono-point-text {
+    color: #ffffff;
+  }
+  

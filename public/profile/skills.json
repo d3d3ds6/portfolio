@@ -1,37 +1,57 @@
 {
     "intro": "I love to learn new things and experiment with new technologies.\nThese are some of the major languages, technologies, tools and platforms I have worked with:",
-    "skills": [{
-     
+    "skills": [
+        {
             "title": "Languages & Databases",
-            "items" : [
-     
+            "items": [
                 {
                     "icon": "images/skills/java.png",
                     "title": "Java"
-                },
-                {
-                    "icon": "images/skills/php.png",
-                    "title": "PHP"
                 },
                 {
                     "icon": "images/skills/js.png",
                     "title": "JavaScript"
                 },
                 {
+                    "icon": "images/skills/ts.png",
+                    "title": "TypeScript"
+                },
+                {
+                    "icon": "images/skills/php.png",
+                    "title": "PHP"
+                },
+                {
                     "icon": "images/skills/python.png",
                     "title": "Python"
                 },
                 {
+                    "icon": "images/skills/c.png",
+                    "title": "C"
+                },
+                {
+                    "icon": "images/skills/csharp.png",
+                    "title": "C#"
+                },
+                {
                     "icon": "images/skills/mysql.png",
                     "title": "MySQL"
+                },
+                {
+                    "icon": "images/skills/mongodb.png",
+                    "title": "MongoDB"
+                },
+                {
+                    "icon": "images/skills/sqlserver.png",
+                    "title": "SQL Server"
                 }
-        ]},
+            ]
+        },
         {
             "title": "Frameworks & Technologies",
-            "items" : [
+            "items": [
                 {
-                    "icon": "images/skills/android_new.png",
-                    "title": "Android"
+                    "icon": "images/skills/angular.png",
+                    "title": "Angular"
                 },
                 {
                     "icon": "images/skills/react.png",
@@ -39,25 +59,67 @@
                 },
                 {
                     "icon": "images/skills/nodejs.png",
-                    "title": "Nodejs"
+                    "title": "Node.js"
+                },
+                {
+                    "icon": "images/skills/express.png",
+                    "title": "Express.js"
+                },
+                {
+                    "icon": "images/skills/vue.png",
+                    "title": "Vue.js"
+                },
+                {
+                    "icon": "images/skills/nuxt.png",
+                    "title": "Nuxt.js 3"
+                },
+                {
+                    "icon": "images/skills/springboot.png",
+                    "title": "Spring Boot"
+                },
+                {
+                    "icon": "images/skills/bootstrap.png",
+                    "title": "Bootstrap"
                 }
             ]
         },
         {
-            "title" : "Tools & Platforms",
+            "title": "Cloud & DevOps",
             "items": [
-                {
-                    "icon": "images/skills/android-studio.png",
-                    "title": "Android Studio"
-                },
                 {
                     "icon": "images/skills/git.png",
                     "title": "Git"
                 },
                 {
+                    "icon": "images/skills/gitlab.png",
+                    "title": "GitLab CI"
+                },
+                {
                     "icon": "images/skills/docker.png",
                     "title": "Docker"
+                },
+                {
+                    "icon": "images/skills/firebase.png",
+                    "title": "Firebase"
                 }
             ]
-    }
-]}
+        },
+        {
+            "title": "Project Management & Tools",
+            "items": [
+                {
+                    "icon": "images/skills/jira.png",
+                    "title": "Jira"
+                },
+                {
+                    "icon": "images/skills/bitbucket.png",
+                    "title": "Bitbucket"
+                },
+                {
+                    "icon": "images/skills/agile.png",
+                    "title": "Agile"
+                }
+            ]
+        }
+    ]
+}

@@ -2,32 +2,26 @@
     "experiences": [
         {
             "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Full-time",
+            "subtitle": "DGTAL",
+            "workType": "Internship",
             "workDescription": [
-                "Integrated **2** new product.",
-                "Worked on adding **def** to **bcd**. Improved speed by 50%."
+                "Developed a centralized platform to enhance business listing management in Tunisia, addressing the needs of users and business owners.",
+                "Implemented secure user authentication, business submission and management, admin dashboard, and search functionality.",
+                "Worked remotely as part of a Scrum team, achieving project milestones across multiple sprints.",
+                "Technologies used: Firebase, Google Cloud, Docker, Git, Nuxt.js 3, Bootstrap, TypeScript, Spring Boot."
             ],
-            "dateText": "06/20XX – Present"
+            "dateText": "May 2024 – September 2024"
         },
         {
             "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Internship",
+            "subtitle": "DGTAL",
+            "workType": "Part-time Contract",
             "workDescription": [
-                "Worked on abc."
+                "Currently working on the development of a new version of Houni.tn, an innovative real estate platform.",
+                "Improving features to streamline property searches and management.",
+                "Technologies used: Firebase, Google Cloud, Docker, Git, Nuxt.js 3, TypeScript, Spring Boot, Angular 18, Node.js 18."
             ],
-            "dateText": "01/20XX – 05/20XX"
-        },
-        {
-            "title": "App Developer",
-            "subtitle": "ABC Pvt Ltd",
-            "workType": "Freelance",
-            "workDescription": [
-                "Developed the official apps for the startup for both Android and iOS using hybrid framework.",
-                "Done bcd work."
-            ],
-            "dateText": "09/20XX – 01/20YY"
+            "dateText": "October 2024 – Present"
         }
     ]
 }

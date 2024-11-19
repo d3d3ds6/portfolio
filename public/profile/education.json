@@ -1,19 +1,31 @@
 {
-    "education":[
-        {
-            "title": "Jun 20XX - Jun 20YY",
-            "cardTitle": "B.Tech, Computer Science",
-            "cardSubtitle":"XYZ University, City",
-            "cardDetailedText": "CGPA - 9.5",
-            "icon" : {
-                "src": "images/education/lorem-ipsum.png"
-            }
-        },
-        {
-            "title": "Apr 20XX",
-            "cardTitle": "High School",
-            "cardSubtitle":"ABC School, City",
-            "cardDetailedText": "Marks - 95%"
+    "education": [
+      {
+        "title": "Sep 2024 - Jun 2027",
+        "cardTitle": "Bachelor's Degree in Software Engineering",
+        "cardSubtitle": "EPI Digital, Sousse, Tunisia",
+        "cardDetailedText": "Focused on advanced software development, system design, and emerging technologies.",
+        "icon": {
+          "src": "images/education/epi_digital.png",
+          "alt": "EPI Digital Logo"
         }
+      },
+      {
+        "title": "Sep 2021 - Jun 2024",
+        "cardTitle": "Bachelor's Degree in Computer Science",
+        "cardSubtitle": "Higher Institute of Computer and Communication Technologies (ISITCOM), Sousse, Tunisia",
+        "cardDetailedText": "Studied programming, algorithms, and data structures. Acquired a solid foundation in computer science principles.",
+        "icon": {
+          "src": "images/education/isitcom.png",
+          "alt": "ISITCOM Logo"
+        }
+      },
+      {
+        "title": "Jun 2021",
+        "cardTitle": "Baccalaureate Degree",
+        "cardSubtitle": "2 Mars High School, Korba, Nabeul, Tunisia",
+        "cardDetailedText": "Graduated with a focus on sciences, laying the groundwork for a career in technology."
+      }
     ]
-}
+  }
+  
